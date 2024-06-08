@@ -72,11 +72,11 @@ export class AppComponent implements OnInit {
     this.total = 0;
     this.tax = 0;
     this.items = [];
-    this.onAddCategoryButtonClick();
-    this.onAddItemButtonClick();
   }
 
   ngOnInit() {
+    this.onAddCategoryButtonClick();
+    this.onAddItemButtonClick();
   }
 
   onItemRemoveButtonClick(index: number): void {
