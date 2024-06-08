@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "deploy": "ng deploy --base-href=/receipt-breakdown/",
     "serve:ssr:receipt-breakdown": "node dist/receipt-breakdown/server/server.mjs"
   },
   "private": true,
