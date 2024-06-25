@@ -21,7 +21,7 @@
                  [(ngModel)]="category.name"
                  [readOnly]="Boolean(category.default)"
           />
-          <input placeholder="$ 0.00"
+          <input [placeholder]="MONEY_PLACEHOLDER"
                  currencyMask
                  [(ngModel)]="category.total"
                  [options]="CURRENCY_CONFIG"
@@ -45,14 +45,14 @@
       <div class="card-content receipt-grid">
         <div class="spacer"></div>
         <div class="spacer"></div>
-        <input placeholder="Total"
+        <input [placeholder]="MONEY_PLACEHOLDER"
                currencyMask
                [(ngModel)]="total"
                [options]="CURRENCY_CONFIG"
                [ngModelOptions]="{standalone:true}"
                readonly
         />
-        <input placeholder="Tax"
+        <input [placeholder]="MONEY_PLACEHOLDER"
                currencyMask
                [(ngModel)]="tax"
                [options]="CURRENCY_CONFIG"
@@ -67,7 +67,7 @@
           <input placeholder="Name"
                  [(ngModel)]="item.name"
           />
-          <input placeholder="$ 0.00"
+          <input [placeholder]="MONEY_PLACEHOLDER"
                  currencyMask
                  [ngModel]="item.amount"
                  [options]="CURRENCY_CONFIG"

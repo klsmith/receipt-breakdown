@@ -48,6 +48,7 @@ export interface Item {
 })
 export class AppComponent implements OnInit {
 
+  protected readonly MONEY_PLACEHOLDER = '$ 0.00';
   protected readonly CURRENCY_CONFIG = {
     prefix: '$ ',
     thousands: ',',
